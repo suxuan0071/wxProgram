@@ -1,0 +1,1 @@
+<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text><button type="default" data-event-opts="{{[['tap',[['jumpClick',['$event']]]]]}}" bindtap="__e">jump</button></view></view>
