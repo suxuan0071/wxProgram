@@ -1,0 +1,19 @@
+<template>
+	<view>
+		<view class="head">
+			
+		</view>
+		<view class="body">
+			
+		</view>
+		<view class="foot">
+			
+		</view>
+	</view>
+</template>
+
+<script>
+</script>
+
+<style>
+</style>
