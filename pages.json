@@ -3,15 +3,13 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "计分器",
-				"backgroundColor": "rgb(129,216,208)"
+				"navigationBarTitleText": "计分器"
 			}
 		},
 		{
 			"path": "pages/room/room",
 			"style": {
-				"navigationBarTitleText": "我的房间",
-				"backgroundColor": "rgb(129,216,208)"
+				"navigationBarTitleText": "我的房间"
 			}
 		}
 	],

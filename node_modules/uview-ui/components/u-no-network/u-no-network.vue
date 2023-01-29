@@ -1,7 +1,6 @@
 <template>
 	<u-overlay
 	    :show="!isConnected"
-		:zIndex="zIndex"
 	    @touchmove.stop.prevent="noop"
 		:customStyle="{
 			backgroundColor: '#fff',

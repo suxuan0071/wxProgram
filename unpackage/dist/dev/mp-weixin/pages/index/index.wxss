@@ -1,24 +1,169 @@
-
-.content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.head .userInfo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200rpx;
 }
-.logo {
-	height: 200rpx;
-	width: 200rpx;
-	margin-top: 200rpx;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50rpx;
+.head .userInfo .userImage {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 60rpx;
 }
-.text-area {
-	display: flex;
-	justify-content: center;
+.btnBox .button {
+  width: 300rpx;
 }
-.title {
-	font-size: 36rpx;
-	color: #8f8f94;
+.userList {
+  display: flex;
+  height: 200rpx;
+  margin-top: 40rpx;
+  border-top: solid 8rpx #f4f4f6;
+  margin-bottom: 20rpx;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.userItem {
+  flex-shrink: 0;
+  width: 120rpx;
+  font-size: 28rpx;
+  position: relative;
+}
+.userItem .avatar {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  margin: 10rpx, 0;
+  border-radius: 25px;
+  border: solid 2rpx #f4f4f6;
+}
+.userItem .userName {
+  position: absolute;
+  top: 120rpx;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.userItem .userScore {
+  position: absolute;
+  top: 160rpx;
+  right: 0;
+  left: 0;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  color: #9e2d25;
+}
+.msgBox {
+  background-color: #f6f6f6;
+  border-top: solid 8rpx #f4f4f6;
+  height: 800rpx;
+}
+.msgBox .joinRoom,
+.msgBox .reflashInfo {
+  background-color: #cecece;
+  font-size: 30rpx;
+  color: white;
+  width: -webkit-fit-content;
+  width: fit-content;
+  margin: 20rpx auto;
+  padding: 0 10rpx;
+  border-radius: 10rpx;
+  text-align: center;
+}
+.msgBox .scoreInfo {
+  background-color: white;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.msgBox .scoreInfo text {
+  font-size: 36rpx;
+  margin: 0 10rpx;
+  font-weight: 600;
+}
+.msgBox .scoreInfo .payer,
+.msgBox .scoreInfo .reciver {
+  color: #5494bd;
+}
+.msgBox .scoreInfo .score {
+  color: #9e2d25;
+}
+.msgBox .scoreInfo .dateTime {
+  float: right;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #b6b6b6;
+}
+.confirmBox {
+  height: 500rpx;
+  width: 600rpx;
+  background-color: white;
+  font-size: 30rpx;
+}
+.confirmBox .confirmBoxHead {
+  margin: 40rpx auto;
+  display: flex;
+  padding: 20rpx 40rpx;
+  text-align: center;
+  font-weight: 600;
+  color: #6db5ff;
+}
+.confirmBox .confirmBoxHead .info {
+  flex: 2;
+}
+.confirmBox .confirmBoxHead .info image {
+  width: 100rpx;
+  height: 60rpx;
+}
+.confirmBox .confirmBoxHead .confirmBoxUserItem {
+  flex: 1;
+}
+.confirmBox .confirmBoxHead .confirmBoxUserItem .avatar {
+  margin: 10rpx, 0;
+  border-radius: 25px;
+  border: solid 2rpx #f4f4f6;
+  width: 80rpx;
+  height: 80rpx;
+}
+.confirmBox .inputBox {
+  margin: 0 80rpx;
+}
+.confirmBox .confirmBtn {
+  margin-left: 80rpx;
+  margin-top: 40rpx;
+  width: 74%;
 }
 

@@ -35,8 +35,7 @@
                                 : inactiveColor
                         "
                         :custom-style="{
-                            'padding-left': $u.addUnit(gutter / 2),
-							'padding-right': $u.addUnit(gutter / 2)
+                            padding: `0 ${$u.addUnit(gutter / 2)}`,
                         }"
                         :size="size"
                     ></u-icon>
@@ -64,8 +63,7 @@
                                 : inactiveColor
                         "
                         :custom-style="{
-							'padding-left': $u.addUnit(gutter / 2),
-							'padding-right': $u.addUnit(gutter / 2)
+                            padding: `0 ${$u.addUnit(gutter / 2)}`
                         }"
                         :size="size"
                     ></u-icon>

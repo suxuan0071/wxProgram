@@ -21,7 +21,6 @@
 		:border="border"
 		:customStyle="customStyle"
 		:formatter="formatter"
-		:ignoreCompositionEvent="ignoreCompositionEvent"
 		@focus="e => $emit('focus')"
 		@blur="e => $emit('blur')"
 		@linechange="e => $emit('linechange', e)"

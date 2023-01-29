@@ -17,7 +17,6 @@
 				:selectable="false"
 				@longpress.stop="longpressHandler"
 				:style="{
-					color: color,
 					backgroundColor: bgColor && showTooltip && tooltipTop !== -10000 ? bgColor : 'transparent'
 				}"
 			>{{ text }}</text>
@@ -313,6 +312,7 @@
 			/* #endif */
 
 			&__text {
+				color: $u-content-color;
 				font-size: 14px;
 			}
 
