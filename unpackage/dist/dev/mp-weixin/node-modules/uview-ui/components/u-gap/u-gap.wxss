@@ -24,54 +24,13 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.head .userInfo {
-  position: relative;
+view.data-v-f69acc36, scroll-view.data-v-f69acc36, swiper-item.data-v-f69acc36 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200rpx;
-}
-.head .userInfo .userImage {
-  width: 100rpx;
-  height: 100rpx;
-  margin-right: 60rpx;
-}
-.btnBox .button {
-  border-radius: 20rpx;
-}
-.changeAvatar {
-  position: relative;
-  text-align: center;
-  border: 4rpx solid #f1f1f1;
-  box-shadow: 2rpx 4rpx 4rpx rgba(0, 0, 255, 0.2);
-  margin: 40rpx auto 0 auto;
-  width: 80%;
-}
-.changeAvatar .text {
-  display: block;
-  margin-top: 20rpx;
-}
-.changeAvatar .tips {
-  font-size: 26rpx;
-  margin-top: 20rpx;
-}
-.changeAvatar .avatarWrap {
-  border-radius: 10rpx;
-  margin-top: 20rpx;
-  width: 300rpx;
-  height: 300rpx;
-  border-style: none;
-}
-.changeAvatar .avatarWrap .avatar {
-  margin-left: -30rpx;
-}
-.changeAvatar .defaultInputBox {
-  width: 60%;
-  margin: 40rpx auto;
-  text-align: center;
-}
-.changeAvatar .btnWrap {
-  width: 60%;
-  margin: 0 auto 80rpx auto;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: auto;
+  align-items: stretch;
+  align-content: flex-start;
 }
 

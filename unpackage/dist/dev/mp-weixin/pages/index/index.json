@@ -3,6 +3,8 @@
   "usingComponents": {
     "u-row": "/node-modules/uview-ui/components/u-row/u-row",
     "u-col": "/node-modules/uview-ui/components/u-col/u-col",
-    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u-action-sheet": "/node-modules/uview-ui/components/u-action-sheet/u-action-sheet",
+    "u--input": "/node-modules/uview-ui/components/u--input/u--input"
   }
 }

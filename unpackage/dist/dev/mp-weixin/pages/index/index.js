@@ -103,6 +103,12 @@ try {
     },
     uButton: function() {
       return Promise.all(/*! import() | node-modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-button/u-button.vue */ 168))
+    },
+    uActionSheet: function() {
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-action-sheet/u-action-sheet */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-action-sheet/u-action-sheet")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-action-sheet/u-action-sheet.vue */ 273))
+    },
+    "u-Input": function() {
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u--input/u--input */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u--input/u--input")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u--input/u--input.vue */ 186))
     }
   }
 } catch (e) {
@@ -186,13 +192,38 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {
       title: 'Hello',
       imgAddress: '../../static/index/pk.png',
-      userItem: {} };
-
+      userItem: {},
+      defaultAvatarAddr: "",
+      defaultName: "" };
 
   },
   onLoad: function onLoad() {
@@ -209,10 +240,13 @@ __webpack_require__.r(__webpack_exports__);
           score: 0,
           pid: res.cloudID };
 
+        this.defaultAvatarAddr = res.userInfo.avatarUrl;
+        this.defaultName = userItem.name;
+        //本地先存储一份
         this.userItem = userItem;
         uni.setStorage({
           key: 'userItem',
-          data: userItem });
+          data: this.userItem });
 
       }.bind(this) }),
 
@@ -229,6 +263,28 @@ __webpack_require__.r(__webpack_exports__);
     createRoom: function createRoom() {
       uni.navigateTo({
         url: '../room/room' });
+
+    },
+    scanCode: function scanCode() {
+      wx.scanCode({
+        onlyFromCamera: true,
+        success: function success(res) {
+        } });
+
+    },
+    onChooseavatar: function onChooseavatar(data) {
+      this.defaultAvatarAddr = data.detail.avatarUrl;
+      this.userItem.avatarAddr = data.detail.avatarUrl;
+      uni.setStorage({
+        key: 'userItem',
+        data: this.userItem });
+
+    },
+    confirmChange: function confirmChange() {
+      this.userItem.name = this.defaultName;
+      uni.setStorage({
+        key: 'userItem',
+        data: this.userItem });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
