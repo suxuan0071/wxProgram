@@ -17901,7 +17901,9 @@ platform;exports.default = _default;
 /* 152 */,
 /* 153 */,
 /* 154 */,
-/* 155 */
+/* 155 */,
+/* 156 */,
+/* 157 */
 /*!**********************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-row/props.js ***!
   \**********************************************************************************************************/
@@ -17928,14 +17930,14 @@ platform;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 156 */,
-/* 157 */,
 /* 158 */,
 /* 159 */,
 /* 160 */,
 /* 161 */,
 /* 162 */,
-/* 163 */
+/* 163 */,
+/* 164 */,
+/* 165 */
 /*!**********************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-col/props.js ***!
   \**********************************************************************************************************/
@@ -17972,14 +17974,14 @@ platform;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 164 */,
-/* 165 */,
 /* 166 */,
 /* 167 */,
 /* 168 */,
 /* 169 */,
 /* 170 */,
-/* 171 */
+/* 171 */,
+/* 172 */,
+/* 173 */
 /*!*****************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/libs/mixin/button.js ***!
   \*****************************************************************************************************/
@@ -18000,7 +18002,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     openType: String } };exports.default = _default;
 
 /***/ }),
-/* 172 */
+/* 174 */
 /*!*******************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/libs/mixin/openType.js ***!
   \*******************************************************************************************************/
@@ -18033,7 +18035,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     } } };exports.default = _default;
 
 /***/ }),
-/* 173 */
+/* 175 */
 /*!*************************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-button/props.js ***!
   \*************************************************************************************************************/
@@ -18202,14 +18204,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 174 */,
-/* 175 */,
 /* 176 */,
 /* 177 */,
 /* 178 */,
 /* 179 */,
 /* 180 */,
-/* 181 */
+/* 181 */,
+/* 182 */,
+/* 183 */
 /*!************************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-popup/props.js ***!
   \************************************************************************************************************/
@@ -18296,14 +18298,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 182 */,
-/* 183 */,
 /* 184 */,
 /* 185 */,
 /* 186 */,
 /* 187 */,
 /* 188 */,
-/* 189 */
+/* 189 */,
+/* 190 */,
+/* 191 */
 /*!************************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-input/props.js ***!
   \************************************************************************************************************/
@@ -18493,12 +18495,12 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 190 */,
-/* 191 */,
 /* 192 */,
 /* 193 */,
 /* 194 */,
-/* 195 */
+/* 195 */,
+/* 196 */,
+/* 197 */
 /*!*************************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-notify/props.js ***!
   \*************************************************************************************************************/
@@ -18555,14 +18557,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 196 */,
-/* 197 */,
 /* 198 */,
 /* 199 */,
 /* 200 */,
 /* 201 */,
 /* 202 */,
-/* 203 */
+/* 203 */,
+/* 204 */,
+/* 205 */
 /*!*******************************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-loading-icon/props.js ***!
   \*******************************************************************************************************************/
@@ -18629,14 +18631,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 204 */,
-/* 205 */,
 /* 206 */,
 /* 207 */,
 /* 208 */,
 /* 209 */,
 /* 210 */,
-/* 211 */
+/* 211 */,
+/* 212 */,
+/* 213 */
 /*!***********************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-icon/icons.js ***!
   \***********************************************************************************************************/
@@ -18859,7 +18861,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   'uicon-en': "\uE692" };exports.default = _default;
 
 /***/ }),
-/* 212 */
+/* 214 */
 /*!***********************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-icon/props.js ***!
   \***********************************************************************************************************/
@@ -18956,14 +18958,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 213 */,
-/* 214 */,
 /* 215 */,
 /* 216 */,
 /* 217 */,
 /* 218 */,
 /* 219 */,
-/* 220 */
+/* 220 */,
+/* 221 */,
+/* 222 */
 /*!**************************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-overlay/props.js ***!
   \**************************************************************************************************************/
@@ -18995,14 +18997,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 221 */,
-/* 222 */,
 /* 223 */,
 /* 224 */,
 /* 225 */,
 /* 226 */,
 /* 227 */,
-/* 228 */
+/* 228 */,
+/* 229 */,
+/* 230 */
 /*!*****************************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-transition/props.js ***!
   \*****************************************************************************************************************/
@@ -19034,7 +19036,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 229 */
+/* 231 */
 /*!**********************************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-transition/transition.js ***!
   \**********************************************************************************************************************/
@@ -19045,7 +19047,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 34));
 
 
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 230));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 232));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};} // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {return new Promise(function (resolve) {return setTimeout(resolve, 1000 / 50);});}; // nvue动画模块实现细节抽离在外部文件
 
 // 定义类名，通过给元素动态切换类名，赋予元素一定的css动画样式
@@ -19199,7 +19201,7 @@ var getClassNames = function getClassNames(name) {return {
     } } };exports.default = _default;
 
 /***/ }),
-/* 230 */
+/* 232 */
 /*!************************************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \************************************************************************************************************************/
@@ -19275,14 +19277,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     'leave-to': { opacity: 0, transform: 'scale(0.95)' } } };exports.default = _default;
 
 /***/ }),
-/* 231 */,
-/* 232 */,
 /* 233 */,
 /* 234 */,
 /* 235 */,
 /* 236 */,
 /* 237 */,
-/* 238 */
+/* 238 */,
+/* 239 */,
+/* 240 */
 /*!*****************************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-status-bar/props.js ***!
   \*****************************************************************************************************************/
@@ -19298,14 +19300,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 239 */,
-/* 240 */,
 /* 241 */,
 /* 242 */,
 /* 243 */,
 /* 244 */,
 /* 245 */,
-/* 246 */
+/* 246 */,
+/* 247 */,
+/* 248 */
 /*!******************************************************************************************************************!*\
   !*** C:/Users/gientech/Documents/HBuilderProjects/login/node_modules/uview-ui/components/u-safe-bottom/props.js ***!
   \******************************************************************************************************************/

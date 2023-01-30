@@ -96,22 +96,13 @@ var components
 try {
   components = {
     uRow: function() {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-row/u-row */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-row/u-row")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-row/u-row.vue */ 150))
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-row/u-row */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-row/u-row")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-row/u-row.vue */ 152))
     },
     uCol: function() {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-col/u-col */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-col/u-col")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-col/u-col.vue */ 158))
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-col/u-col */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-col/u-col")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-col/u-col.vue */ 160))
     },
     uButton: function() {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-button/u-button.vue */ 166))
-    },
-    uPopup: function() {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-popup/u-popup */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-popup/u-popup")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-popup/u-popup.vue */ 176))
-    },
-    "u-Input": function() {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u--input/u--input */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u--input/u--input")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u--input/u--input.vue */ 184))
-    },
-    uNotify: function() {
-      return Promise.all(/*! import() | node-modules/uview-ui/components/u-notify/u-notify */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-notify/u-notify")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-notify/u-notify.vue */ 190))
+      return Promise.all(/*! import() | node-modules/uview-ui/components/u-button/u-button */[__webpack_require__.e("common/vendor"), __webpack_require__.e("node-modules/uview-ui/components/u-button/u-button")]).then(__webpack_require__.bind(null, /*! uview-ui/components/u-button/u-button.vue */ 168))
     }
   }
 } catch (e) {
@@ -195,176 +186,50 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {
   data: function data() {
     return {
       title: 'Hello',
-      imgAddress: '../../static/index/userImage.png',
-      userName: 'sx0071',
-      userId: 1,
-      userItems: [{
-        avatarAddr: '../../static/index/avatar.png',
-        name: 'zc',
-        score: 0,
-        pid: 1 },
+      imgAddress: '../../static/index/pk.png',
+      userItem: {} };
 
-      {
-        avatarAddr: '../../static/index/avatar.png',
-        name: '六一',
-        score: 100,
-        pid: 2 }],
-
-
-      roomList: [{
-        name: 'zc',
-        pid: 1 },
-      {
-        name: '六六',
-        pid: 2 }],
-
-      scoreList: [],
-      dateTime: '10:24:30',
-      show: false,
-      notify: false,
-      calendarShow: false,
-      payerInfo: {
-        name: 'zc',
-        avatarAddr: '../../static/index/userImage.png' },
-
-      reciverInfo: {
-        name: '六一',
-        avatarAddr: '../../static/index/userImage.png' },
-
-      inputScore: "" };
 
   },
-  onLoad: function onLoad() {},
+  onLoad: function onLoad() {
+    uni.authorize({
+      scope: 'scope.userInfo' }),
+
+    uni.getUserInfo({
+      desc: '获取用户的头像以及名称',
+      success: function (res) {
+        var random = Math.floor(Math.random() * 9999);
+        var userItem = {
+          avatarAddr: res.userInfo.avatarUrl,
+          name: res.userInfo.nickName + random,
+          score: 0,
+          pid: res.cloudID };
+
+        this.userItem = userItem;
+        uni.setStorage({
+          key: 'userItem',
+          data: userItem });
+
+      }.bind(this) }),
+
+    uni.getSystemInfo({
+      success: function success(res) {
+        uni.setStorage({
+          key: 'windowHeight',
+          data: res.windowHeight });
+
+      } });
+
+  },
   methods: {
     createRoom: function createRoom() {
       uni.navigateTo({
         url: '../room/room' });
 
-    },
-    setMsgBoxHeight: function setMsgBoxHeight() {
-
-    },
-    getReciver: function getReciver(pid) {var _this = this;
-      if (pid === this.userId) {
-        // this.$refs.uNotify.show({
-        // 	top: 40,
-        // 	type: 'warning',
-        // 	message: '自己给自己转没用哟~',
-        // 	duration: 1000 * 3,
-        // 	fontSize: 20,
-        // 	safeAreaInsetTop: true
-        // })
-      } else {
-        this.userItems.forEach(function (item) {
-          if (item.pid === pid) {
-            _this.reciverInfo = item;
-          }
-        });
-        this.show = true;
-      }
-    },
-    openPopUp: function openPopUp(pid) {
-      this.getReciver(pid);
-    },
-    popupClose: function popupClose() {
-      this.show = false;
-    },
-    confirmClick: function confirmClick() {
-      this.show = false;
-      //payer扣分
-      for (var i = 0; i < this.userItems.length; i++) {
-        if (this.userItems[i].name === this.payerInfo.name) {
-          this.userItems[i].score -= this.inputScore;
-        }
-        if (this.userItems[i].name === this.reciverInfo.name) {
-          this.userItems[i].score += parseInt(this.inputScore);
-        }
-      }
-      var myDate = new Date();
-      var str = myDate.toTimeString();
-      var timeStr = str.substring(0, 8);
-      this.scoreList.unshift({
-        payer: this.payerInfo.name,
-        reciver: this.reciverInfo.name,
-        score: this.inputScore,
-        dateTime: timeStr });
-
-      this.inputScore = "";
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
